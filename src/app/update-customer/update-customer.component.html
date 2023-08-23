@@ -1,0 +1,23 @@
+<h3>Update Customer</h3>
+<form (ngSubmit)="formSubmit()">
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.firstName" name="firstName" placeholder="First Name">
+        <input type="text" [(ngModel)]="Customer.lastName" name="lastName" placeholder="Last Name">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.street" name="street" placeholder="Street">
+        <input type="text" [(ngModel)]="Customer.address" name="address" placeholder="Address">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.city" name="city" placeholder="City">
+        <input type="text" [(ngModel)]="Customer.state" name="state" placeholder="State">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.email" name="email" placeholder="Email">
+        <input type="text" [(ngModel)]="Customer.phone" name="phone" placeholder="Phone">
+    </div>
+    <div class="btn">
+        <button type="submit">Update</button>
+    </div>
+
+</form>

@@ -1,0 +1,58 @@
+<h3>- Customer List Screen</h3>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Street</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of CustomerList">
+            <td>{{c.firstName}}</td>
+            <td>{{c.lastName}}</td>
+            <td>{{c.street}}</td>
+            <td>{{c.address}}</td>
+            <td>{{c.city}}</td>
+            <td>{{c.state}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.phone}}</td>
+            <td class="btn">
+                <button (click)="deleteButton(c.customerId)" type="submit">Delete</button>
+                <button style="margin-left: 5px;" [routerLink]="'/update/' + c.customerId" type="submit">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>- Add a new Customer</h3>
+<h3>Customer Details</h3>
+<form (ngSubmit)="formSubmit()">
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.firstName" name="firstName" placeholder="First Name">
+        <input type="text" [(ngModel)]="Customer.lastName" name="lastName" placeholder="Last Name">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.street" name="street" placeholder="Street">
+        <input type="text" [(ngModel)]="Customer.address" name="address" placeholder="Address">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.city" name="city" placeholder="City">
+        <input type="text" [(ngModel)]="Customer.state" name="state" placeholder="State">
+    </div>
+    <div class="container">
+        <input type="text" [(ngModel)]="Customer.email" name="email" placeholder="Email">
+        <input type="text" [(ngModel)]="Customer.phone" name="phone" placeholder="Phone">
+    </div>
+    <div class="btn">
+        <button type="submit">Submit</button>
+    </div>
+
+</form>

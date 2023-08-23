@@ -1,0 +1,40 @@
+h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+.container input{
+    padding: 5px;
+    font-size: 25px;
+    margin-top: 40px;
+    border-radius: 5px;
+    width: 20%;
+    height: 20px;
+    margin-left: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: 580px;
+}
+.btn button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(51, 51, 243);
+    border: 2px solid rgb(51, 51, 243);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+}
